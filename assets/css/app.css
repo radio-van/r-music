@@ -1,0 +1,320 @@
+body {
+  font-family: 'Open Sans';
+  background: #873eff;
+  color: #fff;
+  background-repeat: no-repeat!important;
+  background-attachment: fixed!important;
+  background-position: center!important;
+}
+h1, h2, h3, h4, h5, h6, ul, p, pre {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 22px;
+}
+h2 {
+  font-size: 20px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px;
+}
+h5 {
+  font-size: 14px;
+}
+.text-dark {
+  color: #000000!important;
+}
+.bg-primary {
+  background-color: #873eff!important;
+}
+.bg-secondary {
+  background-color: #CCCCCC!important;
+}
+.control-panel {
+  padding-top:28px;
+  text-align: center;
+  height:calc(290px - 28px);
+  background-color:rgba(0, 0, 0, 0.5)
+}
+@media screen and (orientation: landscape) {
+  .control-panel {
+    padding-top:28px;
+    text-align: center;
+    height:calc(290px - 108px);
+    background-color:rgba(0, 0, 0, 0.5)
+  }
+}
+.sr-only,
+.sr-only-focusable:not(:focus) {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
+.mdl {
+  height:90%;
+}
+.mdl-content {
+  top:25;
+}
+.mdl-body {
+  padding: 0 0 30px 0!important;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+}
+.software-key {
+  padding: 0!important;
+  z-index: 9;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: #000!important;
+  height: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 600;
+}
+.inactive {
+  -webkit-filter: opacity(.4);
+  filter: opacity(.4);
+}
+input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  background: transparent; /* Otherwise white in Chrome */
+  border: 0px solid transparent;
+  width: 100%;
+}
+input[type=range]::-moz-range-thumb {
+  border: 1px solid #fff;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+input[type=range]::-moz-range-track {
+  height: 4px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 1.3px;
+}
+
+.slider_wrapper{
+  z-index: 9999999;
+  top:0;
+  position:fixed;
+  background:#cccccc;
+  width:100%;
+  height:4px;
+}
+
+.slider{
+  position:absolute;
+  width:98%;
+  height:4px;
+}
+
+.line{
+  position:absolute;
+  background:#cccccc;
+  width:100%;
+  height:4px;
+}
+
+.break{
+  position:absolute;
+  background:#873eff;
+  width:2%;
+  height:4px;
+}
+
+.dot1{
+  -webkit-animation: loading 2s infinite;
+  -moz-animation: loading 2s infinite;
+  -ms-animation: loading 2s infinite;
+  -o-animation: loading 2s infinite;
+  animation: loading 2s infinite;
+}
+
+.dot2{
+  -webkit-animation: loading 2s 0.5s infinite;
+  -moz-animation: loading 2s 0.5s infinite;
+  -ms-animation: loading 2s 0.5s infinite;
+  -o-animation: loading 2s 0.5s infinite;
+  animation: loading 2s 0.5s infinite;
+}
+
+.dot3{
+  -webkit-animation: loading 2s 1s infinite;
+  -moz-animation: loading 2s 1s infinite;
+  -ms-animation: loading 2s 1s infinite;
+  -o-animation: loading 2s 1s infinite;
+  animation: loading 2s 1s infinite;
+}
+
+@keyframes "loading" {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+@-moz-keyframes loading {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+@-webkit-keyframes "loading" {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+@-ms-keyframes "loading" {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+@-o-keyframes "loading" {
+  from { left: 0; }
+  to { left: 100%; }
+}
+
+.marquee {
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+
+.marquee span {
+  display: inline-block;
+  height: 20px;
+  padding-left: 100%;  /* show the marquee just outside the paragraph */
+  animation: marquee 15s linear infinite;
+}
+
+/* Make it move */
+@keyframes marquee {
+  0%   { transform: translate(0, 0); }
+  100% { transform: translate(-100%, 0); }
+}
+
+.kui-options {
+}
+
+.kui-options li {
+  height: 50px;
+  white-space: nowrap;
+  width: 98%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kui-options li:focus {
+  height: 50px;
+  white-space: nowrap;
+  width: 98%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.kui-separator-sm {
+  height: 4px;
+  background-color: #cccccc;
+  line-height: 4px;
+}
+
+#snackbar {
+  border-radius: 20px;
+  font-size: 14px;
+  visibility: hidden;
+  width: 80%;
+  margin: 5%;
+  padding: 5%;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  position: fixed;
+  z-index: 1;
+  font-weight: 600;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  bottom: 30px; /* 30px from the bottom */
+}
+
+#snackbar.show {
+  visibility: visible;
+  opacity: 1;
+  transition: opacity 0.3s linear;
+}
+
+#snackbar.hide {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s 0.3s, opacity 0.3s linear;
+}
+
+/* KaiOS portrait devices (240x320) */
+@media only screen and (orientation : portrait) {
+  #virtual-dpad {}
+}
+
+/* KaiOS landscape devices (320x240) */
+@media screen and (orientation: landscape) {
+  #virtual-dpad {
+    position: absolute !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    margin: -1px !important;
+    overflow: hidden !important;
+    clip: rect(0, 0, 0, 0) !important;
+    white-space: nowrap !important;
+    border: 0 !important;
+  }
+}
+
+.nav_equal {
+  width:92%;
+  border-bottom: 1px solid #ccc;
+}
+
+
+li input[type=range] {
+  -webkit-appearance: none; /* Hides the slider so that custom slider can be made */
+  background: transparent; /* Otherwise white in Chrome */
+  border: 0px solid transparent;
+  width: 80%;
+}
+li input[type=range]::-moz-range-thumb {
+  border: 1px solid #ccc;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+li input[type=range]::-moz-range-track {
+  height: 4px;
+  cursor: pointer;
+  background: #ccc;
+  border-radius: 1.3px;
+}
