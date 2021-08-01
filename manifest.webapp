@@ -1,12 +1,11 @@
 {
-  "version": "1.9.1",
-  "name": "K-Music",
-  "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
+  "name": "R-Podcasts",
+  "default_locale": "en-US",
+  "description": "A podcasts player",
   "launch_path": "/index.html",
-  "theme": "#431F7F",
-  "theme_color": "#431F7F",
-  "background_color": "#431F7F",
-  "fullscreen": "true",
+  "background_color": "#689d6a",
+  "theme": "#689d6a",
+  "theme_color": "#689d6a",
   "chrome": {
     "statusbar": "overlap"
   },
@@ -19,32 +18,29 @@
     "112": "/icons/icon112x112.png"
   },
   "developer": {
-    "name": "arma7x",
-    "url": "https://github.com/arma7x/kaimusic"
+    "name": "radio-van",
+    "url": "https://github.com/radio-van/r-podcasts"
   },
-  "origin": "app://kaimusic.bananahackers.net",
+  "origin": "app://rpodcasts.bananahackers.net",
   "type": "privileged",
   "permissions": {
     "device-storage:sdcard":{
       "access": "readwrite"
     },
-    "device-storage:music":{
-      "access": "readwrite"
-    },
     "audio-channel-normal": {
-      "description" : "Needed to play this app's audio content on the normal channel"
+      "description" : "Needed to play this app's podcasts content on the normal channel"
     },
     "audio-channel-content": {
-      "description": "To play audio in background"
+      "description": "To play podcasts in background"
     },
     "volumemanager": {}
   },
   "locales": {
     "en-US": {
-      "name": "K-Music",
-      "subtitle": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
-      "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer"
+      "name": "R-Podcasts",
+      "subtitle": "A podcasts player",
+      "description": "A podcasts player"
     }
   },
-  "default_locale": "en-US"
+  "version": "1.9.1"
 }
