@@ -1594,7 +1594,7 @@ window.addEventListener("load", function() {
     var b = [];
     files.forEach((i) => {
       var t = i.split('/');
-      var i = t.indexOf('.nomedia');
+      var i = t.indexOf('.nopodcasts');
       if (i > -1) {
         b.push(t.slice(0, i).join('/'));
       }
