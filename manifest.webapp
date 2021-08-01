@@ -1,12 +1,11 @@
 {
-  "version": "1.9.1",
-  "name": "K-Music",
-  "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
+  "name": "R-Music",
+  "default_locale": "en-US",
+  "description": "An audio player",
   "launch_path": "/index.html",
+  "background_color": "#431F7F",
   "theme": "#431F7F",
   "theme_color": "#431F7F",
-  "background_color": "#431F7F",
-  "fullscreen": "true",
   "chrome": {
     "statusbar": "overlap"
   },
@@ -19,16 +18,13 @@
     "112": "/icons/icon112x112.png"
   },
   "developer": {
-    "name": "arma7x",
-    "url": "https://github.com/arma7x/kaimusic"
+    "name": "radio-van",
+    "url": "https://github.com/radio-van/r-music"
   },
-  "origin": "app://kaimusic.bananahackers.net",
+  "origin": "app://rmusic.bananahackers.net",
   "type": "privileged",
   "permissions": {
     "device-storage:sdcard":{
-      "access": "readwrite"
-    },
-    "device-storage:music":{
       "access": "readwrite"
     },
     "audio-channel-normal": {
@@ -41,10 +37,10 @@
   },
   "locales": {
     "en-US": {
-      "name": "K-Music",
-      "subtitle": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer",
-      "description": "An audio player for KaiOS with playlist manager + Equalizer + MP3 Cutter/Trimmer"
+      "name": "R-Music",
+      "subtitle": "An audio player",
+      "description": "An audio player"
     }
   },
-  "default_locale": "en-US"
+  "version": "1.9.1"
 }
