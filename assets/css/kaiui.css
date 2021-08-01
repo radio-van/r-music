@@ -26,7 +26,7 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 .statusbar-placeholder {
-    background-color: #320374;
+    background-color: #1d2021;
     height: 26px;
 }
 
@@ -223,7 +223,7 @@ h1, h2, h3, h4, h5, ul, p {
 }
 
 .kui-list li:focus {
-    background-color: #873eff;
+    background-color: #1d2021;
     outline: 0;
 }
 
@@ -299,7 +299,7 @@ button.kui-btn:focus {
 }
 
 .kui-input-holder.kui-focus-within {
-    background-color: #873eff;
+    background-color: #1d2021;
     outline: 0;
 }
 
@@ -351,7 +351,7 @@ button.kui-btn:focus {
 
 .kui-table tr:focus {
     outline: 0;
-    background-color: #873eff;
+    background-color: #1d2021;
     color: #fff;
 }
 

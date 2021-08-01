@@ -1,7 +1,7 @@
 body {
   font-family: 'Open Sans';
-  background: #873eff;
-  color: #fff;
+  background: #1d2021;
+  color: #ebdbb2;
   background-repeat: no-repeat!important;
   background-attachment: fixed!important;
   background-position: center!important;
@@ -29,10 +29,10 @@ h5 {
   color: #000000!important;
 }
 .bg-primary {
-  background-color: #873eff!important;
+  background-color: #1d2021!important;
 }
 .bg-secondary {
-  background-color: #CCCCCC!important;
+  background-color: #a89984!important;
 }
 .control-panel {
   padding-top:28px;
