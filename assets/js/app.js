@@ -294,7 +294,6 @@ window.addEventListener("load", function() {
   const VOLUME_BTN = document.getElementById('volume_btn');
   const VOLUME_LEVEL = document.getElementById('volume_level');
   const VOLUME_STATUS = document.getElementById('volume_status');
-  const ALBUM_COVER = document.getElementById('album_cover');
   const LOADING = document.getElementById('loading');
   const MENU_SK = document.getElementById('menu_software_key');
   const OFFMENU_SK = document.getElementById('offmenu_software_key');
@@ -306,8 +305,6 @@ window.addEventListener("load", function() {
   const CM_SK = document.getElementById('confirm_software_key');
   const SNACKBAR = document.getElementById("snackbar");
   const ARTIS_LBL = document.getElementById("artis_label");
-  const ALBUM_LBL = document.getElementById("album_label");
-  const GENRE_LBL = document.getElementById("genre_label");
   const PLAYLIST_NAME = document.getElementById("playlist_name");
   const PLAYLIST_LABEL = document.getElementById("playlist_label");
   const PLAYLIST_TRACK_UL = document.getElementById("playlist_track_ul");
@@ -453,35 +450,6 @@ window.addEventListener("load", function() {
         ARTIS_LBL.innerHTML = media.tags.artist;
       } else {
         ARTIS_LBL.innerHTML = 'Unknown';
-      }
-      if (!e.data.error && media.tags.album) {
-        ALBUM_LBL.innerHTML = media.tags.album;
-      } else {
-        ALBUM_LBL.innerHTML = 'Unknown';
-      }
-      if (!e.data.error && media.tags.genre) {
-        GENRE_LBL.innerHTML = media.tags.genre;
-      } else {
-        GENRE_LBL.innerHTML = 'Unknown';
-      }
-      if (media.tags.picture) {
-        if (media.tags.picture.data) {
-          const data = media.tags.picture.data;
-          const type = media.tags.picture.type ;
-          const byteArray = new Uint8Array(data);
-          const blob = new Blob([byteArray], { type });
-          ALBUM_COVER.src = URL.createObjectURL(blob);
-          document.body.style.background = `url(${ALBUM_COVER.src})`
-        } else if (media.tags.picture.blob) {
-          ALBUM_COVER.src = URL.createObjectURL(media.tags.picture.blob);
-          document.body.style.background = `url(${ALBUM_COVER.src})`
-        } else {
-          ALBUM_COVER.src = '/assets/img/baseline_album_white_48.png';
-          document.body.style.background = ``
-        }
-      } else {
-        ALBUM_COVER.src = '/assets/img/baseline_album_white_48.png';
-        document.body.style.background = ``
       }
     }
   }

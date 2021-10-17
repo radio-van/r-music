@@ -1,6 +1,6 @@
 #!/bin/sh
 
-APP='music'
+APP='podcasts'
 
 echo 'Assembling application.zip...'
 [ -f application.zip ] && mv -f ./application.zip ./application.zip.bak
